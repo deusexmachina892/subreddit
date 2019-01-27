@@ -1,0 +1,139 @@
+  body{
+   color: orange;
+   text-align: center;
+  }
+  a{
+    color: #8898aa;
+    text-decoration: none;
+  }
+  .header{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    border-bottom: 6px solid transparent;
+    border-image: linear-gradient(to right, red , yellow);
+    border-image-slice: 1;
+    padding: 2px;
+  }
+
+  .header:hover, header:active{
+    cursor: pointer;
+    transition: all 1000ms ease-in-out;
+    transform: scale(1.1);
+  }
+
+  .selector ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .selector h4{
+    font-size: 1.25em;
+    color: #787878;
+    text-align: center;
+  }
+  .selector ul li button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    min-width: 100px;
+    font-size: 1.15em;
+    background-image: linear-gradient(to right, red , orange);
+  }
+
+  .selector ul li button:hover, .selector ul li button:active{
+    cursor: pointer;
+    transform: scale(1.1) translateY(-5px);
+  }
+
+  .postlist {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    color: #787878;
+    text-align: center;
+  }
+
+  .postlist h1{
+    font-size: 1.5em;
+  }
+
+  .postlist .post{
+    margin: 10px 100px;
+    padding: 40px;
+    min-height: 200px;
+    box-shadow: 2px 2px 2px 2px #ddd ;
+    text-align: center;
+  }
+
+  .postlist .post section, aside, footer, header, figure{
+    margin: 20px auto;
+  }
+  .postlist .post figure{
+    box-shadow: 2px 2px 2px 2px #ddd;
+  }
+  .postlist .post main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .postlist .post section{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 900px;
+  }
+  .postlist .post footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .postlist .post footer .subreddit{
+   border: 1px solid #8898aa;
+   color: #8898aa;
+   border-radius: 2px;
+   max-height: 20px; 
+   min-width: 100px; 
+   padding: 10px;
+  }
+
+  .postlist .post footer .subreddit:hover, .postlist .post footer .subreddit:active{
+    cursor: pointer;
+    border: 1px solid #24b47e;
+   color: #24b47e;
+  }
+  .postlist .post ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .postlist .post ul .green{
+    color: green;
+  }
+
+  .postlist .post ul .red{
+    color: red;
+  }
+  .postlist .post ul .blue{
+    color: #6772e5;
+  }
+  .postlist .post ul li{
+    margin: 10px;
+  }
+
+  @media only screen and (min-width: 900px) {
+    .postlist .post main>figure{
+      margin: 0 auto 0 0;
+    }
+    .postlist .post aside{
+      margin: 0 0 0 auto;
+    }
+  } 
